@@ -1,0 +1,63 @@
+* {
+  color: white;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url(IMG/fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 300px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.menu {
+  display: flex;
+  align-items:normal;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  
+}
+
+
+
+
+.menu a {
+  text-decoration: none; /* tira linha debaixo */
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 52px 20px;
+}
+
+.menu a:hover {
+  color: #00ffff; /* muda a cor no hover */
+}
+
+/* Imagens principais */
+img {
+  padding: 50px;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+/* Seções */
+.demon {padding: 50px; text-align: center; margin-top: 150px;}
+.a, .b, .c, .d, .e, .f {display: flex; padding: 100px; gap: 40px;}
+.final {text-align: center; padding: 100px;}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #111;
+  color: #aaa;
+  font-size: 14px;
+}
