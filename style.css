@@ -2,62 +2,108 @@
   color: white;
   background-color: black;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 .container {
   background-image: url(IMG/fundo.jpg);
   background-size: cover;
   background-position: center;
-  padding: 300px;
+  padding: 50px 20px;
   text-align: center;
   color: aliceblue;
 }
 
+/* Menu */
 .menu {
   display: flex;
-  align-items:normal;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 30px;
+  padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.9);
-  
+  z-index: 100;
 }
 
-
-
-
 .menu a {
-  text-decoration: none; /* tira linha debaixo */
+  text-decoration: none;
   color: white;
   font-weight: bold;
   transition: color 0.3s ease;
-  padding: 52px 20px;
+  margin: 5px 15px;
 }
 
 .menu a:hover {
-  color: #00ffff; /* muda a cor no hover */
+  color: #00ffff;
 }
 
 /* Imagens principais */
 img {
-  padding: 50px;
-  width: 600px;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
 /* Seções */
-.demon {padding: 50px; text-align: center; margin-top: 150px;}
-.a, .b, .c, .d, .e, .f {display: flex; padding: 100px; gap: 40px;}
-.final {text-align: center; padding: 100px;}
+.demon {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.a, .b, .c, .d, .e, .f {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  gap: 20px;
+}
+
+.a p, .b p, .c p, .d p, .e p, .f p {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+/* Seção final */
+.final {
+  text-align: center;
+  padding: 50px 20px;
+}
 
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 30px 20px;
   background-color: #111;
   color: #aaa;
   font-size: 14px;
+}
+
+/* Media Query para telas menores (celulares) */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .a, .b, .c, .d, .e, .f {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .a p, .b p, .c p, .d p, .e p, .f p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  img {
+    width: 90%;
+    height: auto;
+    padding: 10px 0;
+  }
 }
