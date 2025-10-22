@@ -26,8 +26,11 @@
   
 }
 
-
-
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+}
 
 .menu a {
   text-decoration: none; /* tira linha debaixo */
